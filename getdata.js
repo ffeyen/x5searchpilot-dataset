@@ -13,10 +13,10 @@ const payloadScheme = {
   model_type: '',
 };
 
-const dataArray;
+let dataArray = [];
 
-function loadData() {
-  fs.readFile(filePath, 'utf-8', (err, data) => {
+const loadData = () => {
+  fs.readFile(filePathInput, 'utf-8', (err, data) => {
     if (err) {
       console.log('fs: error loading coursedata');
       console.log(err);
@@ -25,10 +25,10 @@ function loadData() {
       console.log('fs: success loading coursedata');
     }
   });
-}
+};
 
-function submitData(fileBundled) {
-  fs.writeFile(filePath, fileBundled, 'utf-8', (err) => {
+const storeData = (fileWithResults) => {
+  fs.writeFile(filePathOutput, fileWithResults, 'utf-8', (err) => {
     if (err) {
       console.log('fs: error while writing data');
       console.log(err);
@@ -36,7 +36,7 @@ function submitData(fileBundled) {
       console.log('fs: wrote data to file');
     }
   });
-}
+};
 
 const setPayload = (searchtext, modelType) => {
   const payload = payloadScheme;
