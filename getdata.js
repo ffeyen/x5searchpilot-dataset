@@ -13,19 +13,16 @@ const payloadScheme = {
   model_type: '',
 };
 
-let dataArray = [];
-
-const loadData = () => {
+const loadData = () => new Promise((resolve, reject) => {
   fs.readFile(filePathInput, 'utf-8', (err, data) => {
     if (err) {
-      console.log('fs: error loading coursedata');
-      console.log(err);
+      console.log('err');
+      reject(err);
     } else {
-      dataArray = JSON.parse(data);
-      console.log('fs: success loading coursedata');
+      resolve(JSON.parse(data));
     }
   });
-};
+});
 
 const storeData = (fileWithResults) => {
   fs.writeFile(filePathOutput, fileWithResults, 'utf-8', (err) => {
@@ -58,6 +55,5 @@ const getDataFromApi = async (searchtext, modelType) => {
   }
 };
 
-loadData();
 
 // getDataFromApi('medieval', 'doc2vec');
