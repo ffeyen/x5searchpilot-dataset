@@ -22,9 +22,9 @@ const getDataFromApi = async (searchtext, modelType) => {
 
   try {
     const response = await axios.post(url, payload, headers);
-    console.log(response.data.output.rec_materials);
+    return response.data.output.rec_materials;
   } catch (error) {
-    console.log(error);
+    console.error(error);
   }
 };
 
