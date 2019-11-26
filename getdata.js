@@ -48,19 +48,29 @@ const getDataFromApi = async (searchtext, modelType) => {
   const headers = apiConfig.getHeaders();
 
   try {
-    const response = await axios.post(url, payload, headers);
-    return response.data.output.rec_materials;
+    const results = await axios.post(url, payload, headers);
+    return results.data.output.rec_materials;
   } catch (error) {
     console.error(error);
+    return error;
   }
 };
 
-const addResultsToCourses = (courseData) => {
+const getLectureSearchstring = (lecture) => {
+  const title = lecture.title_translated ? lecture.title_translated : lecture.title;
+  const desc = lecture.description_translated ? lecture.description_translated : lecture.description;
+  return `${title} ${desc}`;
+};
+
+const addResultsToCourses = async (courseData) => {
+  console.log(courseData);
   const data = courseData;
   for (let i = 0; i < data.lectures.length; i += 1) {
     const searchstring = getLectureSearchstring(data.lectures[i].attributes);
     for (let k = 0; k < 3; k += 1) {
-      console.log(k);
+      const modelType = apiConfig.modelTypes[k];
+      const results = getDataFromApi(searchstring, modelType);
+      return results;
     }
   }
 };
@@ -68,7 +78,8 @@ const addResultsToCourses = (courseData) => {
 const main = async () => {
   const dataArray = await loadData();
 
-  addResultsToCourses(dataArray);
+  const results = await addResultsToCourses(dataArray);
+  console.log(results);
 };
 
 main();
