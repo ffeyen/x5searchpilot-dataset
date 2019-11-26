@@ -83,5 +83,3 @@ const main = async () => {
 };
 
 main();
-
-// getDataFromApi('medieval', 'doc2vec');
