@@ -1,9 +1,9 @@
-export const urlSearch = 'http://wp3.x5gon.org/searchengine/v1';
-export const urlRecommender = 'http://wp3.x5gon.org/recommendsystem/v1';
+const urlSearch = 'http://wp3.x5gon.org/searchengine/v1';
+const urlRecommender = 'http://wp3.x5gon.org/recommendsystem/v1';
 
-export const modelTypes = ['doc2vec', 'wikifies', 'tfidf'];
+const modelTypes = ['doc2vec', 'wikifies', 'tfidf'];
 
-export const getHeaders = () => {
+const getHeaders = () => {
   const headers = {
     'Content-Type': 'application/json',
     'Access-Control-Allow-Origin': '*',
@@ -11,3 +11,8 @@ export const getHeaders = () => {
 
   return headers;
 };
+
+module.exports = urlSearch;
+module.exports = urlRecommender;
+module.exports = modelTypes;
+module.exports = getHeaders;
