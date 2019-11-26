@@ -55,5 +55,22 @@ const getDataFromApi = async (searchtext, modelType) => {
   }
 };
 
+const addResultsToCourses = (courseData) => {
+  const data = courseData;
+  for (let i = 0; i < data.lectures.length; i += 1) {
+    const searchstring = getLectureSearchstring(data.lectures[i].attributes);
+    for (let k = 0; k < 3; k += 1) {
+      console.log(k);
+    }
+  }
+};
+
+const main = async () => {
+  const dataArray = await loadData();
+
+  addResultsToCourses(dataArray);
+};
+
+main();
 
 // getDataFromApi('medieval', 'doc2vec');
