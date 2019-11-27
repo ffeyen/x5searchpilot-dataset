@@ -49,7 +49,7 @@ const getDataFromApi = async (searchtext, modelType) => {
 
   try {
     const results = await axios.post(url, payload, headers);
-    return results.data.output.rec_materials;
+    return results.data.output.rec_materials.slice(0, 3);
   } catch (error) {
     console.error(error);
     return error;
@@ -63,14 +63,15 @@ const getLectureSearchstring = (lecture) => {
 };
 
 const addResultsToCourses = async (courseData) => {
-  console.log(courseData);
   const data = courseData;
-  for (let i = 0; i < data.lectures.length; i += 1) {
+  for (let i = 0; i < 1; i += 1) {
     const searchstring = getLectureSearchstring(data.lectures[i].attributes);
     for (let k = 0; k < 3; k += 1) {
       const modelType = apiConfig.modelTypes[k];
-      const results = getDataFromApi(searchstring, modelType);
-      return results;
+      getDataFromApi(searchstring, modelType).then((res) => {
+        data.lectures[i].attributes.results.push(res);
+      });
+      return getDataFromApi(searchstring, modelType);
     }
   }
 };
@@ -79,7 +80,7 @@ const main = async () => {
   const dataArray = await loadData();
 
   const results = await addResultsToCourses(dataArray);
-  console.log(results);
+  // console.log(results);
 };
 
 main();
