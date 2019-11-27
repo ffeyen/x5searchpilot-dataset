@@ -15,6 +15,7 @@ const payloadScheme = {
 
 let dataArray;
 const promises = [];
+const resultsPerModelType = 3;
 
 const loadData = () => new Promise((resolve, reject) => {
   fs.readFile(filePathInput, 'utf-8', (err, data) => {
@@ -51,8 +52,15 @@ const getDataFromApi = async (searchtext, modelType) => {
   const headers = apiConfig.getHeaders();
 
   try {
-    const results = await axios.post(url, payload, headers);
-    return results.data.output.rec_materials.slice(0, 3);
+    let results = await axios.post(url, payload, headers);
+    console.log(results);
+    results = // results.data.output.rec_materials.slice(0, resultsPerModelType);
+    results.forEach((result) => {
+      result['model-type'] = modelType;
+      // Delete wikipedia key completely
+      result.wikipedia = '';
+    });
+    return results;
   } catch (error) {
     console.error(error);
     return error;
@@ -66,17 +74,20 @@ const getLectureSearchstring = (lecture) => {
 };
 
 const handleResponse = (response, index) => {
-  dataArray.lectures[index].attributes.results.push(response);
+  dataArray.lectures[index].attributes.results.push(...response);
 };
 
 const addResultsToCourses = async () => {
-  for (let i = 0; i < 1; i += 1) {
+  const lecturesCount = dataArray.lectures.length;
+  for (let i = 0; i < lecturesCount; i += 1) {
     const searchstring = getLectureSearchstring(dataArray.lectures[i].attributes);
-    for (let k = 0; k < 3; k += 1) {
+    for (let k = 0; k < 2; k += 1) {
       const modelType = apiConfig.modelTypes[k];
       promises.push(
         getDataFromApi(searchstring, modelType)
-          .then((res) => handleResponse(res, i)),
+          .then((res) => {
+            handleResponse(res, i);
+          }),
       );
     }
   }
