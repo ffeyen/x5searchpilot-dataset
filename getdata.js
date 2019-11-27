@@ -24,8 +24,8 @@ const loadData = () => new Promise((resolve, reject) => {
   });
 });
 
-const storeData = (fileWithResults) => {
-  fs.writeFile(filePathOutput, fileWithResults, 'utf-8', (err) => {
+const storeData = (dataResults) => {
+  fs.writeFile(filePathOutput, dataResults, 'utf-8', (err) => {
     if (err) {
       console.log('fs: error while writing data');
       console.log(err);
