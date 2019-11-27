@@ -13,6 +13,9 @@ const payloadScheme = {
   model_type: '',
 };
 
+let dataArray;
+const promises = [];
+
 const loadData = () => new Promise((resolve, reject) => {
   fs.readFile(filePathInput, 'utf-8', (err, data) => {
     if (err) {
@@ -25,7 +28,7 @@ const loadData = () => new Promise((resolve, reject) => {
 });
 
 const storeData = (dataResults) => {
-  fs.writeFile(filePathOutput, dataResults, 'utf-8', (err) => {
+  fs.writeFile(filePathOutput, JSON.stringify(dataResults, null, 2), 'utf-8', (err) => {
     if (err) {
       console.log('fs: error while writing data');
       console.log(err);
@@ -62,25 +65,33 @@ const getLectureSearchstring = (lecture) => {
   return `${title} ${desc}`;
 };
 
-const addResultsToCourses = async (courseData) => {
-  const data = courseData;
+const handleResponse = (response, index) => {
+  dataArray.lectures[index].attributes.results.push(response);
+};
+
+const addResultsToCourses = async () => {
   for (let i = 0; i < 1; i += 1) {
-    const searchstring = getLectureSearchstring(data.lectures[i].attributes);
+    const searchstring = getLectureSearchstring(dataArray.lectures[i].attributes);
     for (let k = 0; k < 3; k += 1) {
       const modelType = apiConfig.modelTypes[k];
-      getDataFromApi(searchstring, modelType).then((res) => {
-        data.lectures[i].attributes.results.push(res);
-      });
-      return getDataFromApi(searchstring, modelType);
+      promises.push(
+        getDataFromApi(searchstring, modelType)
+          .then((res) => handleResponse(res, i)),
+      );
     }
   }
 };
 
 const main = async () => {
-  const dataArray = await loadData();
+  dataArray = await loadData();
 
-  const results = await addResultsToCourses(dataArray);
-  // console.log(results);
+  await addResultsToCourses();
+
+  Promise.all(promises)
+    .then(() => {
+      storeData(dataArray);
+    })
+    .catch((error) => console.log(error));
 };
 
 main();
