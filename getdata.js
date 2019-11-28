@@ -1,21 +1,13 @@
 const axios = require('axios');
 const fs = require('fs');
 
-const apiConfig = require('./config');
+const CONFIG = require('./config');
 
 const filePathInput = `${__dirname}/input/course-data.json`;
 const filePathOutput = `${__dirname}/output/data-materials.json`;
 
-const payloadScheme = {
-  text: '',
-  type: '',
-  page: 1,
-  model_type: '',
-};
-
 let dataArray;
 const promises = [];
-const resultsPerModelType = 3;
 
 const loadData = () => new Promise((resolve, reject) => {
   fs.readFile(filePathInput, 'utf-8', (err, data) => {
@@ -40,7 +32,7 @@ const storeData = (dataResults) => {
 };
 
 const setPayload = (searchtext, modelType) => {
-  const payload = payloadScheme;
+  const payload = CONFIG.payloadScheme;
   payload.text = searchtext;
   payload.model_type = modelType;
   return payload;
@@ -48,13 +40,12 @@ const setPayload = (searchtext, modelType) => {
 
 const getDataFromApi = async (searchtext, modelType) => {
   const payload = setPayload(searchtext, modelType);
-  const url = apiConfig.urlSearch;
-  const headers = apiConfig.getHeaders();
+  const url = CONFIG.urlSearch;
+  const headers = CONFIG.getHeaders();
 
   try {
     let results = await axios.post(url, payload, headers);
-    console.log(results);
-    results = // results.data.output.rec_materials.slice(0, resultsPerModelType);
+    results = results.data.output.rec_materials.slice(0, CONFIG.resultsPerModelType);
     results.forEach((result) => {
       result['model-type'] = modelType;
       // Delete wikipedia key completely
@@ -79,10 +70,10 @@ const handleResponse = (response, index) => {
 
 const addResultsToCourses = async () => {
   const lecturesCount = dataArray.lectures.length;
-  for (let i = 0; i < lecturesCount; i += 1) {
+  for (let i = 0; i < 1; i += 1) {
     const searchstring = getLectureSearchstring(dataArray.lectures[i].attributes);
-    for (let k = 0; k < 2; k += 1) {
-      const modelType = apiConfig.modelTypes[k];
+    for (let k = 0; k < 3; k += 1) {
+      const modelType = CONFIG.modelTypes[k];
       promises.push(
         getDataFromApi(searchstring, modelType)
           .then((res) => {
