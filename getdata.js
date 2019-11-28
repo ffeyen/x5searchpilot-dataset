@@ -71,7 +71,7 @@ function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-const addResultsToCourses = async () => {
+const sendRequestPerLecture = async () => {
   const lecturesCount = dataArray.lectures.length;
   for (let i = 0; i < lecturesCount; i += 1) {
     const searchstring = getLectureSearchstring(dataArray.lectures[i].attributes);
@@ -93,7 +93,7 @@ const addResultsToCourses = async () => {
 const main = async () => {
   dataArray = await loadData();
 
-  await addResultsToCourses();
+  await sendRequestPerLecture();
 
   Promise.all(promises)
     .then(() => {
