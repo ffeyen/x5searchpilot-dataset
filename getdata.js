@@ -3,14 +3,11 @@ const fs = require('fs');
 
 const CONFIG = require('./config');
 
-const filePathInput = `${__dirname}/input/course-data.json`;
-const filePathOutput = `${__dirname}/output/data-materials.json`;
-
 let dataArray;
 const promises = [];
 
 const loadData = () => new Promise((resolve, reject) => {
-  fs.readFile(filePathInput, 'utf-8', (err, data) => {
+  fs.readFile(CONFIG.filePathInput, 'utf-8', (err, data) => {
     if (err) {
       console.log('err');
       reject(err);
@@ -22,7 +19,7 @@ const loadData = () => new Promise((resolve, reject) => {
 });
 
 const storeData = (dataResults) => {
-  fs.writeFile(filePathOutput, JSON.stringify(dataResults, null, 2), 'utf-8', (err) => {
+  fs.writeFile(CONFIG.filePathOutput, JSON.stringify(dataResults, null, 2), 'utf-8', (err) => {
     if (err) {
       console.log('fs: error while writing data');
       console.log(err);
@@ -71,7 +68,7 @@ const handleResponse = (response, index) => {
 
 const addResultsToCourses = async () => {
   const lecturesCount = dataArray.lectures.length;
-  for (let i = 21; i < lecturesCount; i += 1) {
+  for (let i = 0; i < 1; i += 1) {
     const searchstring = getLectureSearchstring(dataArray.lectures[i].attributes);
     for (let k = 0; k < 3; k += 1) {
       const modelType = CONFIG.modelTypes[k];
