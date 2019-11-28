@@ -68,15 +68,15 @@ const handleResponse = (response, index) => {
 
 const addResultsToCourses = async () => {
   const lecturesCount = dataArray.lectures.length;
-  for (let i = 0; i < 1; i += 1) {
+  for (let i = 0; i < lecturesCount; i += 1) {
     const searchstring = getLectureSearchstring(dataArray.lectures[i].attributes);
     for (let k = 0; k < 3; k += 1) {
       const modelType = CONFIG.modelTypes[k];
-      console.log(`request sent: lecture ${i} / model-type ${modelType}`);
+      console.log(`request: lecture ${i} (${modelType}) - sent`);
       promises.push(
         getDataFromApi(searchstring, modelType)
           .then((res) => {
-            console.log(`request resolved: lecture ${i} / model-type ${modelType}`);
+            console.log(`request: lecture ${i} (${modelType}) - resolved`);
             handleResponse(res, i);
           }),
       );
