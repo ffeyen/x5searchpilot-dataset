@@ -75,7 +75,7 @@ const addResultsToCourses = async () => {
   const lecturesCount = dataArray.lectures.length;
   for (let i = 0; i < lecturesCount; i += 1) {
     const searchstring = getLectureSearchstring(dataArray.lectures[i].attributes);
-    for (let k = 0; k < 3; k += 1) {
+    for (let k = 0; k < CONFIG.modelTypes.length; k += 1) {
       const modelType = CONFIG.modelTypes[k];
       console.log(`lecture ${i} (${modelType}) - request sent`);
       promises.push(
