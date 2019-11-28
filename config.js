@@ -1,5 +1,8 @@
 const CONFIG = {};
 
+CONFIG.filePathInput = `${__dirname}/input/course-data.json`;
+CONFIG.filePathOutput = `${__dirname}/output/data-materials.json`;
+
 CONFIG.urlSearch = 'http://wp3.x5gon.org/searchengine/v1';
 CONFIG.urlRecommender = 'http://wp3.x5gon.org/recommendsystem/v1';
 
@@ -9,7 +12,6 @@ CONFIG.resultsPerModelType = 3;
 CONFIG.getHeaders = () => {
   const headers = {
     'Content-Type': 'application/json',
-    'Access-Control-Allow-Origin': '*',
   };
 
   return headers;
