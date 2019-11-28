@@ -7,7 +7,7 @@ CONFIG.urlSearch = 'http://wp3.x5gon.org/searchengine/v1';
 CONFIG.urlRecommender = 'http://wp3.x5gon.org/recommendsystem/v1';
 
 CONFIG.modelTypes = ['doc2vec', 'tfidf', 'wikifier'];
-CONFIG.resultsPerModelType = 3;
+CONFIG.resultsPerModelType = 10;
 CONFIG.sleepTime = 10000;
 
 CONFIG.getHeaders = () => {
