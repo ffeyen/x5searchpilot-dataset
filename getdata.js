@@ -67,20 +67,21 @@ const handleResponse = (response, index) => {
 };
 
 function sleep(ms) {
+  console.log('waiting...');
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 const addResultsToCourses = async () => {
   const lecturesCount = dataArray.lectures.length;
-  for (let i = 0; i < 2; i += 1) {
+  for (let i = 0; i < lecturesCount; i += 1) {
     const searchstring = getLectureSearchstring(dataArray.lectures[i].attributes);
     for (let k = 0; k < 3; k += 1) {
       const modelType = CONFIG.modelTypes[k];
-      console.log(`request: lecture ${i} (${modelType}) - sent`);
+      console.log(`lecture ${i} (${modelType}) - request sent`);
       promises.push(
         getDataFromApi(searchstring, modelType)
           .then((res) => {
-            console.log(`request: lecture ${i} (${modelType}) - resolved`);
+            console.log(`lecture ${i} (${modelType}) - request resolved`);
             handleResponse(res, i);
           }),
       );
