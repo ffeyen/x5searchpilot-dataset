@@ -86,7 +86,7 @@ const sendRequestPerLecture = async () => {
           }),
       );
     }
-    await sleep(CONFIG.sleepTime);
+    if (CONFIG.useSleepTime) await sleep(CONFIG.sleepTime);
   }
 };
 
