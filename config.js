@@ -25,6 +25,9 @@ CONFIG.payloadScheme = {
   type: '',
   page: 1,
   model_type: '',
+  remove_duplicates: 1,
+  nb_wikiconcepts: 0,
+  return_wikisupport: 0,
 };
 
 module.exports = CONFIG;
