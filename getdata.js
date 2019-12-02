@@ -46,8 +46,6 @@ const getDataFromApi = async (searchtext, modelType) => {
     results = results.data.output.rec_materials.slice(0, CONFIG.resultsPerModelType);
     results.forEach((result) => {
       result['model-type'] = modelType;
-      // Delete wikipedia key completely
-      result.wikipedia = '';
     });
     return results;
   } catch (error) {
