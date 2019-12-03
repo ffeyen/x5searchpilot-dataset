@@ -19,8 +19,8 @@ const loadData = () => new Promise((resolve, reject) => {
   });
 });
 
-const storeData = (dataResults) => {
-  fs.writeFile(CONFIG.filePathOutput, JSON.stringify(dataResults, null, 2), 'utf-8', (err) => {
+const storeData = (dataResults, outputPath) => {
+  fs.writeFile(outputPath, JSON.stringify(dataResults, null, 2), 'utf-8', (err) => {
     if (err) {
       console.log('fs: error while writing data');
       console.log(err);
@@ -96,8 +96,11 @@ const main = async () => {
 
   Promise.all(promises)
     .then(() => {
-      sorter.count(dataArray);
-      storeData(dataArray);
+      const countedResult = sorter.count(dataArray);
+      storeData(countedResult, `${__dirname}/output/countedResults.json`);
+    })
+    .then(() => {
+      storeData(dataArray, CONFIG.filePathOutput);
     })
     .catch((error) => console.log(error));
 };
