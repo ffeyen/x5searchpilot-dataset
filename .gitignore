@@ -61,4 +61,5 @@ typings/
 .next
 
 output/data-materials.json
+output/countedResults.json
 input/course-data.json*
