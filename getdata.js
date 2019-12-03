@@ -2,6 +2,7 @@ const axios = require('axios');
 const fs = require('fs');
 
 const CONFIG = require('./config');
+const sorter = require('./sort');
 
 let dataArray;
 const promises = [];
@@ -45,7 +46,7 @@ const getDataFromApi = async (searchtext, modelType) => {
     let results = await axios.post(url, payload, headers);
     results = results.data.output.rec_materials.slice(0, CONFIG.resultsPerModelType);
     results.forEach((result) => {
-      result['model-type'] = modelType;
+      result.model_type = modelType;
     });
     return results;
   } catch (error) {
@@ -95,6 +96,7 @@ const main = async () => {
 
   Promise.all(promises)
     .then(() => {
+      sorter.count(dataArray);
       storeData(dataArray);
     })
     .catch((error) => console.log(error));
