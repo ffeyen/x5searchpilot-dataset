@@ -1,6 +1,7 @@
 const axios = require('axios');
 const execTime = require('execution-time')();
 const fs = require('fs');
+const path = require('path');
 
 const CONFIG = require('./config');
 const sorter = require('./sort');
@@ -22,11 +23,12 @@ const loadData = () => new Promise((resolve, reject) => {
 
 const storeData = (dataResults, outputPath) => {
   fs.writeFile(outputPath, JSON.stringify(dataResults, null, 2), 'utf-8', (err) => {
+    const filename = path.parse(outputPath).base;
     if (err) {
-      console.log('fs: error while writing data');
+      console.log(`fs: error while writing data (${filename})`);
       console.log(err);
     } else {
-      console.log('fs: wrote data to output file');
+      console.log(`fs: wrote data to output file (${filename})`);
     }
   });
 };
@@ -80,7 +82,7 @@ function sleep(ms) {
 
 const sendRequestPerLecture = async () => {
   const lecturesCount = dataArray.lectures.length;
-  for (let i = 0; i < lecturesCount; i += 1) {
+  for (let i = 0; i < 2; i += 1) {
     const searchstring = getLectureSearchstring(dataArray.lectures[i].attributes);
     for (let k = 0; k < CONFIG.modelTypes.length; k += 1) {
       const modelType = CONFIG.modelTypes[k];
@@ -88,7 +90,8 @@ const sendRequestPerLecture = async () => {
       promises.push(
         await getDataFromApi(searchstring, modelType)
           .then((res) => {
-            console.log(`lecture ${i} (${modelType}) - resolved`);
+            const time = res[0].request_time.toString().split('.')[0];
+            console.log(`lecture ${i} (${modelType}) - resolved (${time}ms)`);
             handleResponse(res, i);
           }),
       );
