@@ -1,4 +1,5 @@
 const axios = require('axios');
+const execTime = require('execution-time')();
 const fs = require('fs');
 
 const CONFIG = require('./config');
@@ -43,10 +44,13 @@ const getDataFromApi = async (searchtext, modelType) => {
   const headers = CONFIG.getHeaders();
 
   try {
+    execTime.start();
     let results = await axios.post(url, payload, headers);
+    const execTimeEnd = execTime.stop();
     results = results.data.output.rec_materials.slice(0, CONFIG.resultsPerModelType);
     results.forEach((result) => {
       result.model_type = modelType;
+      result.request_time = execTimeEnd.time;
     });
     return results;
   } catch (error) {
@@ -72,15 +76,15 @@ function sleep(ms) {
 
 const sendRequestPerLecture = async () => {
   const lecturesCount = dataArray.lectures.length;
-  for (let i = 0; i < lecturesCount; i += 1) {
+  for (let i = 0; i < 1; i += 1) {
     const searchstring = getLectureSearchstring(dataArray.lectures[i].attributes);
     for (let k = 0; k < CONFIG.modelTypes.length; k += 1) {
       const modelType = CONFIG.modelTypes[k];
-      console.log(`lecture ${i} (${modelType}) - request sent`);
+      console.log(`lecture ${i} (${modelType}) - sent`);
       promises.push(
         await getDataFromApi(searchstring, modelType)
           .then((res) => {
-            console.log(`lecture ${i} (${modelType}) - request resolved`);
+            console.log(`lecture ${i} (${modelType}) - resolved`);
             handleResponse(res, i);
           }),
       );
