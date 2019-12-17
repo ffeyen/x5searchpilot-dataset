@@ -49,7 +49,11 @@ const getDataFromApi = async (searchtext, modelType) => {
     const execTimeEnd = execTime.stop();
     results = results.data.output.rec_materials.slice(0, CONFIG.resultsPerModelType);
     results.forEach((result) => {
-      result.model_type = modelType;
+      const { weight } = result;
+      result.model_type = [];
+      result.model_type.push(modelType);
+      result.weight = [];
+      result.weight.push(weight);
       result.request_time = execTimeEnd.time;
     });
     return results;
@@ -76,7 +80,7 @@ function sleep(ms) {
 
 const sendRequestPerLecture = async () => {
   const lecturesCount = dataArray.lectures.length;
-  for (let i = 0; i < 1; i += 1) {
+  for (let i = 0; i < lecturesCount; i += 1) {
     const searchstring = getLectureSearchstring(dataArray.lectures[i].attributes);
     for (let k = 0; k < CONFIG.modelTypes.length; k += 1) {
       const modelType = CONFIG.modelTypes[k];
@@ -102,6 +106,10 @@ const main = async () => {
     .then(() => {
       const countedResult = sorter.count(dataArray);
       storeData(countedResult, `${__dirname}/output/countedResults.json`);
+    })
+    .then(() => {
+      const sortedResult = sorter.sort(dataArray);
+      storeData(sortedResult, `${__dirname}/output/sortedResults.json`);
     })
     .then(() => {
       storeData(dataArray, CONFIG.filePathOutput);
