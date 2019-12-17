@@ -78,7 +78,7 @@ const sendRequestPerLecture = async () => {
       const modelType = CONFIG.modelTypes[k];
       console.log(`lecture ${i} (${modelType}) - request sent`);
       promises.push(
-        getDataFromApi(searchstring, modelType)
+        await getDataFromApi(searchstring, modelType)
           .then((res) => {
             console.log(`lecture ${i} (${modelType}) - request resolved`);
             handleResponse(res, i);
