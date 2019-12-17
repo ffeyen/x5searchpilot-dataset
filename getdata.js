@@ -60,7 +60,7 @@ const getDataFromApi = async (searchtext, modelType) => {
     });
     return results;
   } catch (error) {
-    console.error(error);
+    console.error(`error in getDataFromApi(): ${error.response.status} ${error.response.statusText}`);
     return error;
   }
 };
@@ -82,7 +82,7 @@ function sleep(ms) {
 
 const sendRequestPerLecture = async () => {
   const lecturesCount = dataArray.lectures.length;
-  for (let i = 0; i < 2; i += 1) {
+  for (let i = 0; i < lecturesCount; i += 1) {
     const searchstring = getLectureSearchstring(dataArray.lectures[i].attributes);
     for (let k = 0; k < CONFIG.modelTypes.length; k += 1) {
       const modelType = CONFIG.modelTypes[k];

@@ -13,8 +13,8 @@ sorter.count = (input) => {
 
     for (let k = 0; k < results.length; k += 1) {
       const materialId = results[k].material_id;
-      const modelType = results[k].model_type;
-      const resultWeight = results[k].weight;
+      const modelType = results[k].model_type[0];
+      const resultWeight = results[k].weight[0];
 
       if (typeof aggregatedResults[i][materialId] === 'undefined') {
         aggregatedResults[i][materialId] = {};
