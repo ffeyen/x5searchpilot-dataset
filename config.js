@@ -9,7 +9,7 @@ CONFIG.urlRecommender = 'http://wp3.x5gon.org/recommendsystem/v1';
 CONFIG.modelTypes = ['doc2vec', 'tfidf', 'wikifier'];
 CONFIG.resultsPerModelType = 10;
 
-CONFIG.useSleepTime = true;
+CONFIG.useSleepTime = false;
 CONFIG.sleepTime = 10000;
 
 CONFIG.getHeaders = () => {
