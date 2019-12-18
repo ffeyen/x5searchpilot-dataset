@@ -31,12 +31,12 @@ sorter.count = (input) => {
 sorter.sort = (input) => {
   const sortedResults = {};
 
+  console.log('\nstart sorting...');
+
   for (let i = 0; i < input.lectures.length; i += 1) {
     const { results } = input.lectures[i].attributes;
     sortedResults[i] = input.lectures[i];
     sortedResults[i].attributes.results = [];
-
-    console.log('\nstart sorting...');
 
     for (let k = 0; k < results.length; k += 1) {
       const materialId = results[k].material_id;
@@ -60,8 +60,9 @@ sorter.sort = (input) => {
         sortedResults[i].attributes.results[matchIndex].weight.push(resultWeight);
       }
     }
-    console.log('sorting complete\n');
   }
+  console.log('sorting complete\n');
+
   return sortedResults;
 };
 
