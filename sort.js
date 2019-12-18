@@ -31,8 +31,7 @@ sorter.count = (input) => {
 sorter.sort = (input) => {
   const sortedResults = {};
 
-  // for (let i = 0; i < input.lectures.length; i += 1) {
-  for (let i = 1; i < 2; i += 1) {
+  for (let i = 0; i < input.lectures.length; i += 1) {
     const { results } = input.lectures[i].attributes;
     sortedResults[i] = input.lectures[i];
     sortedResults[i].attributes.results = [];
