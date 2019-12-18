@@ -1,0 +1,19 @@
+{
+  "lectures": [
+    {
+      "type": "lectures",
+      "id": "1",
+      "attributes": {
+        "title": "",
+        "title_translated": "",
+        "description": "",
+        "description_translated": "",
+        "language": "de",
+        "course_number": "",
+        "semester": "",
+        "faculty": "",
+        "results": []
+      }
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to x5searchpilot-dataset 👋</h1>
+<h1>x5searchpilot-dataset preparation tool</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/ffeyen/x5searchpilot-dataset#readme" target="_blank">
@@ -12,15 +12,18 @@
   </a>
 </p>
 
-> Small script to send search requests based on university course data (JSON) to one of the X5GON APIs, sort them appropriately and output them in JSON format. The results serve as a preparation for piloting the used API regarding the quality of the search results.
+> Small tool to send search requests based on university course data (JSON) to one of the X5GON APIs, sort them appropriately and output them in JSON format. The results serve as a preparation for piloting the used API regarding the quality of the search results. <br> See http://wp3.x5gon.org/lamapidoc for further information
 
-### 🏠 [Homepage](https://github.com/ffeyen/x5searchpilot-dataset#readme)
 
 ## Install
 
 ```sh
 npm install
 ```
+
+## Config
+Use config.js to configurate the requests.
+
 
 ## Usage
 
@@ -38,10 +41,6 @@ node getdata.js
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/ffeyen/x5searchpilot-dataset/issues).
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
 
 ## 📝 License
 
