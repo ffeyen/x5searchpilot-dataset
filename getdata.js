@@ -108,11 +108,11 @@ const main = async () => {
   Promise.all(promises)
     .then(() => {
       const countedResult = sorter.count(dataArray);
-      storeData(countedResult, `${__dirname}/output/countedResults.json`);
+      storeData(countedResult, CONFIG.filePathOutputCounted);
     })
     .then(() => {
       const sortedResult = sorter.sort(dataArray);
-      storeData(sortedResult, `${__dirname}/output/sortedResults.json`);
+      storeData(sortedResult, CONFIG.filePathOutputSorted);
     })
     .then(() => {
       storeData(dataArray, CONFIG.filePathOutput);

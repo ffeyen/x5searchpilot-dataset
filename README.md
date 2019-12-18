@@ -12,7 +12,7 @@
   </a>
 </p>
 
-> Small tool to send search requests based on university course data (JSON) to one of the X5GON APIs, sort them appropriately and output them in JSON format. The results serve as a preparation for piloting the used API regarding the quality of the search results.
+> Small tool to send search requests based on university course data (JSON) to one of the X5GON APIs, sort them appropriately and output them in JSON format. The results serve as a preparation for piloting the used API regarding the quality of the search results. <br> See http://wp3.x5gon.org/lamapidoc for further information
 
 
 ## Install
@@ -20,6 +20,10 @@
 ```sh
 npm install
 ```
+
+## Config
+Use config.js to configurate the requests.
+
 
 ## Usage
 
