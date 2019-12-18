@@ -1,7 +1,10 @@
 const axios = require('axios');
+const execTime = require('execution-time')();
 const fs = require('fs');
+const path = require('path');
 
 const CONFIG = require('./config');
+const sorter = require('./sort');
 
 let dataArray;
 const promises = [];
@@ -18,13 +21,14 @@ const loadData = () => new Promise((resolve, reject) => {
   });
 });
 
-const storeData = (dataResults) => {
-  fs.writeFile(CONFIG.filePathOutput, JSON.stringify(dataResults, null, 2), 'utf-8', (err) => {
+const storeData = (dataResults, outputPath) => {
+  fs.writeFile(outputPath, JSON.stringify(dataResults, null, 2), 'utf-8', (err) => {
+    const filename = path.parse(outputPath).base;
     if (err) {
-      console.log('fs: error while writing data');
+      console.log(`fs: error while writing data (${filename})`);
       console.log(err);
     } else {
-      console.log('fs: wrote data to output file');
+      console.log(`fs: wrote data to output file (${filename})`);
     }
   });
 };
@@ -42,14 +46,21 @@ const getDataFromApi = async (searchtext, modelType) => {
   const headers = CONFIG.getHeaders();
 
   try {
+    execTime.start();
     let results = await axios.post(url, payload, headers);
+    const execTimeEnd = execTime.stop();
     results = results.data.output.rec_materials.slice(0, CONFIG.resultsPerModelType);
     results.forEach((result) => {
-      result['model-type'] = modelType;
+      const { weight } = result;
+      result.model_type = [];
+      result.model_type.push(modelType);
+      result.weight = [];
+      result.weight.push(weight);
+      result.request_time = execTimeEnd.time;
     });
     return results;
   } catch (error) {
-    console.error(error);
+    console.error(`error in getDataFromApi(): ${error.response.status} ${error.response.statusText}`);
     return error;
   }
 };
@@ -75,11 +86,12 @@ const sendRequestPerLecture = async () => {
     const searchstring = getLectureSearchstring(dataArray.lectures[i].attributes);
     for (let k = 0; k < CONFIG.modelTypes.length; k += 1) {
       const modelType = CONFIG.modelTypes[k];
-      console.log(`lecture ${i} (${modelType}) - request sent`);
+      console.log(`lecture ${i} (${modelType}) - sent`);
       promises.push(
-        getDataFromApi(searchstring, modelType)
+        await getDataFromApi(searchstring, modelType)
           .then((res) => {
-            console.log(`lecture ${i} (${modelType}) - request resolved`);
+            const time = res[0].request_time.toString().split('.')[0];
+            console.log(`lecture ${i} (${modelType}) - resolved (${time}ms)`);
             handleResponse(res, i);
           }),
       );
@@ -95,7 +107,15 @@ const main = async () => {
 
   Promise.all(promises)
     .then(() => {
-      storeData(dataArray);
+      const countedResult = sorter.count(dataArray);
+      storeData(countedResult, `${__dirname}/output/countedResults.json`);
+    })
+    .then(() => {
+      const sortedResult = sorter.sort(dataArray);
+      storeData(sortedResult, `${__dirname}/output/sortedResults.json`);
+    })
+    .then(() => {
+      storeData(dataArray, CONFIG.filePathOutput);
     })
     .catch((error) => console.log(error));
 };
