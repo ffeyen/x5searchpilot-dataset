@@ -1,37 +1,13 @@
 const axios = require('axios');
 const execTime = require('execution-time')();
-const fs = require('fs');
-const path = require('path');
 
 const CONFIG = require('./config');
+
+const filefunctions = require('./filefunctions');
 const sorter = require('./sort');
 
 let dataArray;
 const promises = [];
-
-const loadData = () => new Promise((resolve, reject) => {
-  fs.readFile(CONFIG.filePathInput, 'utf-8', (err, data) => {
-    if (err) {
-      console.log('err');
-      reject(err);
-    } else {
-      console.log('fs: input course data loaded');
-      resolve(JSON.parse(data));
-    }
-  });
-});
-
-const storeData = (dataResults, outputPath) => {
-  fs.writeFile(outputPath, JSON.stringify(dataResults, null, 2), 'utf-8', (err) => {
-    const filename = path.parse(outputPath).base;
-    if (err) {
-      console.log(`fs: error while writing data (${filename})`);
-      console.log(err);
-    } else {
-      console.log(`fs: wrote data to output file (${filename})`);
-    }
-  });
-};
 
 const setPayload = (searchtext, modelType) => {
   const payload = CONFIG.payloadScheme;
@@ -101,21 +77,21 @@ const sendRequestPerLecture = async () => {
 };
 
 const main = async () => {
-  dataArray = await loadData();
+  dataArray = await filefunctions.loadData();
 
   await sendRequestPerLecture();
 
   Promise.all(promises)
     .then(() => {
       const countedResult = sorter.count(dataArray);
-      storeData(countedResult, CONFIG.filePathOutputCounted);
+      filefunctions.storeData(countedResult, CONFIG.filePathOutputCounted);
     })
     .then(() => {
       const sortedResult = sorter.sort(dataArray);
-      storeData(sortedResult, CONFIG.filePathOutputSorted);
+      filefunctions.storeData(sortedResult, CONFIG.filePathOutputSorted);
     })
     .then(() => {
-      storeData(dataArray, CONFIG.filePathOutput);
+      filefunctions.storeData(dataArray, CONFIG.filePathOutput);
     })
     .catch((error) => console.log(error));
 };
