@@ -4,6 +4,7 @@
       "type": "lectures",
       "id": "1",
       "attributes": {
+        "mat_id": "",
         "title": "",
         "title_translated": "",
         "description": "",
@@ -12,6 +13,7 @@
         "course_number": "",
         "semester": "",
         "faculty": "",
+        "url": "",
         "results": []
       }
     }
