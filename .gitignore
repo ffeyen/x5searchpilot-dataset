@@ -60,7 +60,5 @@ typings/
 # next.js build output
 .next
 
-output/data-materials.json
-output/countedResults.json
-output/sortedResults.json
+output/*.json
 input/course-data.json*
