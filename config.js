@@ -43,8 +43,8 @@ CONFIG.getHeaders = () => {
   return headers;
 };
 
-// payload scheme
-CONFIG.payloadScheme = {
+// payload scheme search endpoint
+CONFIG.payloadSchemeSearch = {
   text: '',
   type: '',
   page: 1,
@@ -52,6 +52,13 @@ CONFIG.payloadScheme = {
   remove_duplicates: 1,
   nb_wikiconcepts: 0,
   return_wikisupport: 0,
+};
+
+// payload scheme recommender endpoint
+CONFIG.payloadSchemeRecommender = {
+  resource_id: '',
+  n_neighbors: 10,
+  model_type: '',
 };
 
 module.exports = CONFIG;

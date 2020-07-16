@@ -9,16 +9,16 @@ const sorter = require('./sort');
 let dataArray;
 const promises = [];
 
-const setPayload = (searchtext, modelType) => {
-  const payload = CONFIG.payloadSchemeSearch;
-  payload.text = searchtext;
+const setPayloadForRecommender = (materialId, modelType) => {
+  const payload = CONFIG.payloadSchemeRecommender;
+  payload.resource_id = Number(materialId);
   payload.model_type = modelType;
   return payload;
 };
 
-const getDataFromApi = async (searchtext, modelType) => {
-  const payload = setPayload(searchtext, modelType);
-  const url = CONFIG.urlSearch;
+const getDataFromApiByMatId = async (materialId, modelType) => {
+  const payload = setPayloadForRecommender(materialId, modelType);
+  const url = CONFIG.urlRecommender;
   const headers = CONFIG.getHeaders();
 
   try {
@@ -28,23 +28,22 @@ const getDataFromApi = async (searchtext, modelType) => {
     results = results.data.output.rec_materials.slice(0, CONFIG.resultsPerModelType);
     results.forEach((result) => {
       const { weight } = result;
+      result.wikipedia = '';
       result.model_type = [];
-      result.model_type.push(modelType);
       result.weight = [];
+      result.request_time = [];
+      result.model_type.push(modelType);
       result.weight.push(weight);
-      result.request_time = execTimeEnd.time;
+      result.request_time.push(execTimeEnd.time);
     });
     return results;
   } catch (error) {
-    console.error(`error in getDataFromApi(): ${error.response.status} ${error.response.statusText}`);
+    console.error(`error in getDataFromApi(): 
+      ${error.response.status} 
+      ${error.response.statusText}
+      ${error.response.data.message}`);
     return error;
   }
-};
-
-const getLectureSearchstring = (lecture) => {
-  const title = lecture.title_translated ? lecture.title_translated : lecture.title;
-  const desc = lecture.description_translated ? lecture.description_translated : lecture.description;
-  return `${title} ${desc}`;
 };
 
 const handleResponse = (response, index) => {
@@ -59,12 +58,12 @@ function sleep(ms) {
 const sendRequestPerLecture = async () => {
   const lecturesCount = dataArray.lectures.length;
   for (let i = 0; i < lecturesCount; i += 1) {
-    const searchstring = getLectureSearchstring(dataArray.lectures[i].attributes);
+    const materialId = dataArray.lectures[i].attributes.mat_id;
     for (let k = 0; k < CONFIG.modelTypes.length; k += 1) {
       const modelType = CONFIG.modelTypes[k];
       console.log(`lecture ${i} (${modelType}) - sent`);
       promises.push(
-        await getDataFromApi(searchstring, modelType)
+        await getDataFromApiByMatId(materialId, modelType)
           .then((res) => {
             const time = res[0].request_time.toString().split('.')[0];
             console.log(`lecture ${i} (${modelType}) - resolved (${time}ms)`);

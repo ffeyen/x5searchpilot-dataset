@@ -42,6 +42,7 @@ sorter.sort = (input) => {
       const materialId = results[k].material_id;
       const modelType = results[k].model_type[0];
       const resultWeight = results[k].weight[0];
+      const requestTime = results[k].request_time[0];
       const result = results[k];
       let matchFound = false;
 
@@ -58,6 +59,7 @@ sorter.sort = (input) => {
         );
         sortedResults[i].attributes.results[matchIndex].model_type.push(modelType);
         sortedResults[i].attributes.results[matchIndex].weight.push(resultWeight);
+        sortedResults[i].attributes.results[matchIndex].request_time.push(requestTime);
       }
     }
   }
