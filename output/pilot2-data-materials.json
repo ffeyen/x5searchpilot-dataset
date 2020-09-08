@@ -1,0 +1,626 @@
+{
+  "lectures": [
+    {
+      "type": "lectures",
+      "id": "1",
+      "attributes": {
+        "title": "Differenz und Diffusion von Bildungskindheit und Familienkindheit",
+        "title_translated": "Difference and diffusion of educational childhood and family childhood",
+        "description": "Familie und Schule gelten als wesentliche Sozialisationsorte für Kinder. Die Verhältnisse zwischen diesen Sphären sind (z.B. in Bezug auf Interessen oder Funktionen) indes komplexer als gängige schematische Unterscheidungen etwa zwischen primärer und sekundärer Sozialisation nahelegen. Für die Gegenwart und jüngere Vergangenheit wird in diesem Kontext ein Wandel beschrieben, bei dem ein gesellschaftlich dominantes Kindheitsmuster der ‚Familienkindheit‘ abgelöst wird durch das einer ‚Bildungskindheit‘. Im Seminar werden Rahmenbedingungen und Formen dieses Wandels thematisiert. Zudem wird diskutiert, welche pädagogischen Probleme und Aufgaben sich dabei stellen. Das Seminar ist dem Modul Berufsfeld Grundschule zugeordnet.",
+        "description_translated": "Family and school are regarded as essential places of socialisation for children. The relationships between these spheres (e.g. with regard to interests or functions) are, however, more complex than common schematic distinctions, such as between primary and secondary socialization, suggest. For the present and more recent past, a change is described in this context in which a socially dominant childhood pattern of 'family childhood' is replaced by that of 'educational childhood'. The seminar will focus on the framework conditions and forms of this change. In addition, it will be discussed which pedagogical problems and tasks arise. The seminar is assigned to the module Vocational Field Primary School.",
+        "language": "de",
+        "course_number": "3.1241",
+        "semester": "SS 2019",
+        "faculty": "Institut für Erziehungswissenschaft",
+        "results": [
+          {
+            "material_id": 58504,
+            "weight": [
+              0.30681943002382106
+            ],
+            "url": "https://ocw.mit.edu/courses/experimental-study-group/es-291-learning-seminar-experiments-in-education-spring-2003/assignments/MITES_291S03_4a_antioch.pdf",
+            "title": "Learning Seminar: Experiments in Education",
+            "description": "This seminar explores experiments in education and discusses how education and learning might be done, through reading and discussion. This seminar is not&nbsp;a survey of experiments in education, but rather, its goal is to determine how learning should happen and what kinds of contexts allow it to happen.",
+            "provider": "MIT OpenCourseWare",
+            "author": null,
+            "license": null,
+            "language": "en",
+            "type": "pdf",
+            "wikipedia": [],
+            "model_type": [
+              "doc2vec"
+            ],
+            "request_time": 1180.011773
+          },
+          {
+            "material_id": 38344,
+            "weight": [
+              0.33419591975594554
+            ],
+            "url": "https://ocw.mit.edu/courses/urban-studies-and-planning/11-131-educational-theory-and-practice-iii-spring-2012/projects/MIT11_131S12_Bingo_board.pdf",
+            "title": "Educational Theory and Practice III",
+            "description": "This is the final course in the three-course sequence (11.129, 11.130 and 11.131) that deals with the practicalities of teaching students. Areas of study will include: educational psychology, identification of useful resources that support instruction, learning to use technology in meaningful ways in the classroom, finding more methods of motivating students, implementing differentiated instruction and obtaining a teaching job.",
+            "provider": "MIT OpenCourseWare",
+            "author": null,
+            "license": null,
+            "language": "en",
+            "type": "pdf",
+            "wikipedia": [],
+            "model_type": [
+              "doc2vec"
+            ],
+            "request_time": 1180.011773
+          },
+          {
+            "material_id": 77078,
+            "weight": [
+              0.3356683995836719
+            ],
+            "url": "https://ocw.mit.edu/courses/physics/8-022-physics-ii-electricity-and-magnetism-fall-2002/assignments/assignment08.pdf",
+            "title": "Physics II: Electricity and Magnetism",
+            "description": "Parallel to 8.02: Physics II, but more advanced mathematically. Some knowledge of vector calculus assumed. Maxwell's equations, in both differential and integral form. Electrostatic and magnetic vector potential. Properties of dielectrics and magnetic materials. In addition to the theoretical subject matter, several experiments in electricity and magnetism are performed by the students in the laboratory.",
+            "provider": "MIT OpenCourseWare",
+            "author": null,
+            "license": null,
+            "language": "en",
+            "type": "pdf",
+            "wikipedia": [],
+            "model_type": [
+              "doc2vec"
+            ],
+            "request_time": 1180.011773
+          },
+          {
+            "material_id": 34564,
+            "weight": [
+              0.33648926113524746
+            ],
+            "url": "https://ocw.mit.edu/courses/economics/14-73-the-challenge-of-world-poverty-spring-2011/assignments/MIT14_73S11_education.pdf",
+            "title": "The Challenge of World Poverty",
+            "description": "This is a course for those who are interested in the challenge posed by massive and persistent world poverty, and are hopeful that economists might have something useful to say about this challenge. The questions we will take up include: Is extreme poverty a thing of the past? What is economic life like when living under a dollar per day? Why do some countries grow fast and others fall further behind? Does growth help the poor? Are famines unavoidable? How can we end child labor&mdash;or should we? How do we make schools work for poor citizens? How do we deal with the disease burden? Is micro finance invaluable or overrated? Without property rights, is life destined to be &quot;nasty, brutish and short&quot;? Has globalization been good to the poor? Should we leave economic development to the market? Should we leave economic development to non-governmental organizations (NGOs)? Does foreign aid help or hinder? Where is the best place to intervene?",
+            "provider": "MIT OpenCourseWare",
+            "author": null,
+            "license": null,
+            "language": "en",
+            "type": "pdf",
+            "wikipedia": [],
+            "model_type": [
+              "doc2vec"
+            ],
+            "request_time": 1180.011773
+          },
+          {
+            "material_id": 113468,
+            "weight": [
+              0.34096350185119273
+            ],
+            "url": "",
+            "title": "",
+            "description": "",
+            "provider": "",
+            "author": "",
+            "license": "",
+            "language": "",
+            "type": "",
+            "wikipedia": [],
+            "model_type": [
+              "doc2vec"
+            ],
+            "request_time": 1180.011773
+          },
+          {
+            "material_id": 88915,
+            "weight": [
+              0.812127411365509
+            ],
+            "url": "http://hydro.ijs.si/v018/f2/6khfv7qmwbaqpy7dj34m64na7kffy4zu.mp4",
+            "title": "Kako najti svetlikanje v sebi in drugih?",
+            "description": "Predavanje bom začela s temo Spoštovanje otroštva, saj na njem utemeljujem temeljne pogoje za svetlikanje v človeku. Odrasli se spoštovanja otroštva šele učimo in to je težka naloga. Druga tema je pogovor ali kot jaz pravim, soustvarjanje pogovora, ki omogoči, da ubesedimo življenje na način, da besede postanejo krplje, ki nam pomagajo, da ga živimo. Za svetlikanje potrebujemo čas, zato bo čas in v času ravnanje s sedanjostjo naša tretja tema. Spoštovanje otroštva, pogovor in čas bomo povezali v celoto. Govorila bom o soustvarjanju svetlikanja v družini. Govorila bom o starših, ki zmorejo biti spoštljivi in odgovorni zavezniki otrok, na način, da se jim znajo pridružiti kot ekspertom iz izkušenj. Zaključila bom z besedami o soustvarjanju v svetu za soustvarjanje sveta, ki bo od vseh.",
+            "provider": "Videolectures.NET",
+            "author": [
+              "Gabi Čačinovič Vogrinčič"
+            ],
+            "license": "Creative Commons BY-NC-ND 3.0",
+            "language": "sl",
+            "type": "mp4",
+            "wikipedia": [],
+            "model_type": [
+              "tfidf"
+            ],
+            "request_time": 19699.173893
+          },
+          {
+            "material_id": 67917,
+            "weight": [
+              0.8437873721122742
+            ],
+            "url": "https://ocw.mit.edu/courses/brain-and-cognitive-sciences/9-85-infant-and-early-childhood-cognition-fall-2012/assignments/MIT9_85F12_brochureblank.pdf",
+            "title": "Infant and Early Childhood Cognition",
+            "description": "This course is an introduction to cognitive development focusing on children's understanding of objects, agents, and causality. It develops a critical understanding of experimental design. The course discusses how developmental research might address philosophical questions about the origins of knowledge, appearance and reality, and the problem of other minds. It provides instruction and practice in written communication as needed for cognitive science research (including critical reviews of journal papers, a literature review and an original research proposal), as well as instruction and practice in oral communication in the form of a poster presentation of a journal paper.",
+            "provider": "MIT OpenCourseWare",
+            "author": null,
+            "license": null,
+            "language": "en",
+            "type": "pdf",
+            "wikipedia": [],
+            "model_type": [
+              "tfidf"
+            ],
+            "request_time": 19699.173893
+          },
+          {
+            "material_id": 30521,
+            "weight": [
+              0.8510345220565796
+            ],
+            "url": "http://hydro.ijs.si/v00f/1a/dikuxwguo62hob2nna374seqlto7ye2h.mp4",
+            "title": "Teachers in the Digital Age ",
+            "description": null,
+            "provider": "Videolectures.NET",
+            "author": [
+              "Nives Kreuh"
+            ],
+            "license": "CC BY-NC-ND 3.0",
+            "language": "en",
+            "type": "mp4",
+            "wikipedia": [],
+            "model_type": [
+              "tfidf"
+            ],
+            "request_time": 19699.173893
+          },
+          {
+            "material_id": 112335,
+            "weight": [
+              0.8514882326126099
+            ],
+            "url": "",
+            "title": "",
+            "description": "",
+            "provider": "",
+            "author": "",
+            "license": "",
+            "language": "",
+            "type": "",
+            "wikipedia": [],
+            "model_type": [
+              "tfidf"
+            ],
+            "request_time": 19699.173893
+          },
+          {
+            "material_id": 112453,
+            "weight": [
+              0.8514882326126099
+            ],
+            "url": "https://cnx.org/contents/AgQDEnLI@13.13:_C0iCApg@11/14-1-What-Is-Marriage-What-Is-a-Family",
+            "title": "14.1 What Is Marriage? What Is a Family?",
+            "description": null,
+            "provider": "OpenStax CNX",
+            "author": null,
+            "license": "http://creativecommons.org/licenses/by/4.0/",
+            "language": "en",
+            "type": "html",
+            "wikipedia": [],
+            "model_type": [
+              "tfidf"
+            ],
+            "request_time": 19699.173893
+          },
+          {
+            "material_id": 34474,
+            "weight": [
+              0.6526011824607849
+            ],
+            "url": "http://hydro.ijs.si/v00b/41/ihk5ldqadxwwsf5urc3hc7tllojg3xxy.mp4",
+            "title": "Družina in šport",
+            "description": "Šport je pomembno sredstvo razvoja osebnosti otrok in njihovih sposobnosti ter lastnosti, sočasno pa tudi pomemben kompenzacijski dejavnik negativnih civilizacijskih trendov za vzgojo otrok in celostno podobo družine. Športna dejavnost družine ima več kot zgolj socialno kompenzacijsko vlogo. V prihodnje bi lahko bil šport pomemben (so)dejavnik življenjskega stila mnogih sodobnih družin.",
+            "provider": "Videolectures.NET",
+            "author": [
+              "Tanja Kajtna"
+            ],
+            "license": "CC BY-NC-ND 3.0",
+            "language": "sl",
+            "type": "mp4",
+            "wikipedia": [],
+            "model_type": [
+              "wikifier"
+            ],
+            "request_time": 8229.28342
+          },
+          {
+            "material_id": 106841,
+            "weight": [
+              0.6711920499801636
+            ],
+            "url": "",
+            "title": "",
+            "description": "",
+            "provider": "",
+            "author": "",
+            "license": "",
+            "language": "",
+            "type": "",
+            "wikipedia": [],
+            "model_type": [
+              "wikifier"
+            ],
+            "request_time": 8229.28342
+          },
+          {
+            "material_id": 106925,
+            "weight": [
+              0.6711920499801636
+            ],
+            "url": "https://cnx.org/contents/AgQDEnLI@13.13:a21eHAxj@13.13/Section-Quiz",
+            "title": "Section Quiz",
+            "description": null,
+            "provider": "OpenStax CNX",
+            "author": null,
+            "license": "http://creativecommons.org/licenses/by/4.0/",
+            "language": "en",
+            "type": "html",
+            "wikipedia": [],
+            "model_type": [
+              "wikifier"
+            ],
+            "request_time": 8229.28342
+          },
+          {
+            "material_id": 106577,
+            "weight": [
+              0.7030878663063049
+            ],
+            "url": "",
+            "title": "",
+            "description": "",
+            "provider": "",
+            "author": "",
+            "license": "",
+            "language": "",
+            "type": "",
+            "wikipedia": [],
+            "model_type": [
+              "wikifier"
+            ],
+            "request_time": 8229.28342
+          },
+          {
+            "material_id": 106383,
+            "weight": [
+              0.7391421794891357
+            ],
+            "url": "",
+            "title": "",
+            "description": "",
+            "provider": "",
+            "author": "",
+            "license": "",
+            "language": "",
+            "type": "",
+            "wikipedia": [],
+            "model_type": [
+              "wikifier"
+            ],
+            "request_time": 8229.28342
+          }
+        ]
+      }
+    },
+    {
+      "type": "lectures",
+      "id": "2",
+      "attributes": {
+        "title": "Bilder des Holocaust - Visuelle Medien als Bestandteile eines zeitgemäßen Holocaust Learning",
+        "title_translated": "Images of the Holocaust - Visual Media as Components of Contemporary Holocaust Learning",
+        "description": "Praxisorientiert nähert sich das Seminar ästhetischen Auseinandersetzungen mit dem Holocaust und Menschenrechtsthemen an. Im Zentrum stehen (Spiel-)Filme und Graphic Novels, aber auch künstlerische Positionen (ebenso Denkmäler) sollen diskutiert werden. Nach einführenden Sitzungen im Sinne einer kleinen Filmgeschichte des Holocaust sollen in Form eines Werkstattseminars Chancen und Grenzen des Einsatzes visueller - und gerne auch digitaler - Medien im Holocaust Learning untersucht und ebenso Fragen einer Fiktionalisierung oder Trivialisierung diskutiert werden. Kreative eigene Produktionen bspw. einer Graphic Novel- oder Filmsequenz können ebenfalls Bestandteil der Leistungen sein.",
+        "description_translated": "The seminar is practice-oriented and approaches aesthetic confrontations with the Holocaust and human rights issues. The focus will be on (feature) films and graphic novels, but also on artistic positions (as well as monuments). After introductory sessions in the sense of a small film history of the Holocaust, opportunities and limits of the use of visual - and also digital - media in Holocaust learning will be examined in the form of a workshop seminar, and questions of fictionalisation or trivialisation will also be discussed. Creative productions, e.g. a graphic novel or film sequence, can also be part of the services.",
+        "language": "de",
+        "course_number": "3.1310",
+        "semester": "SS 2019",
+        "faculty": "Institut für Erziehungswissenschaft",
+        "results": []
+      }
+    },
+    {
+      "type": "lectures",
+      "id": "3",
+      "attributes": {
+        "title": "Digitalisierung in der Frühpädagogik",
+        "title_translated": "Digitisation in Early Childhood Education",
+        "description": "Ausgehend von normativen Implikationen der Bundesregierung hinsichtlich der Bedeutung der Digitalisierung im Kontext von Familie und Aufwachsen von Kindern, widmet sich das Seminar der Analyse institutioneller Kontexte und medialer Angebote (Ratgeber, Software usw.) und ordnet dieses vor dem Hintergrund aktueller Forschungsergebnsse kritisch ein.",
+        "description_translated": "Based on the normative implications of the federal government regarding the importance of digitization in the context of the family and the growing up of children, the seminar is dedicated to the analysis of institutional contexts and media offerings (counselors, software, etc.) and critically classifies them against the background of current research results.",
+        "language": "de",
+        "course_number": "3.1235",
+        "semester": "SS 2019",
+        "faculty": "Institut für Erziehungswissenschaf",
+        "results": []
+      }
+    },
+    {
+      "type": "lectures",
+      "id": "4",
+      "attributes": {
+        "title": "Verhalten in schulischen Konfliktsituatione",
+        "title_translated": "Behaviour in school conflict situations",
+        "description": "Intention: Da das Seminar teilweise ein bewegungs- und erlebnispädagogisches Tun und den Wechsel von Theoriereflexionen zum „Verhalten in schulischen Konfliktsituationen“ und praktischen Trainingssequenzen vorsieht, werden keine Prüfungsleistungen, sondern unbenotete Studienleistung (4 LP) angeboten. Eine regelmäßige und aktive Teilnahme für das Erreichen der Kompetenzen ist erforderlich. Seminarkonzeption: Das Konzept für Klassen zur Stärkung der Sozialkompetenz ist darauf ausgerichtet, die Schüler/-innen in ihrem Verhalten kooperativer, kommunikativer und konfliktfähiger werden zu lassen. Im Seminar wird beleuchtet, wie Konflikte in der Klasse entstehen und eskalieren können. Ziel ist eine Förderung der sozialen Handlungskompetenz der Schüler/-innen. Beispiele aus dem Alltag der TeilnehmerInnen sollen mithelfen, konkrete Handlungsperspektiven zu entwickeln. Modul 1 Begrüßung und Einführung in das Thema -„Du sagst ja gar nichts“- Phänomene von Kommunikationsprozessen -Nicht der Konflikt ist das Problem, sondern die Art und Weise, wie wir damit umgehen. -Entstehung, Wahrnehmung und Eskalation von Konflikten Modul 2 Unterrichtsstörungen vermeiden durch gutes Classroom-Management -Hier ist alles so anders-sich an die neue Schule gewöhnen -Erscheinungsformen von Unterrichtsstörungen, die aus Eigenschaften und Verhaltensweisen von Schülern, Lehrkräften und durch äußere Ereignisse entstehen. -Wir erarbeiten unsere Klassenregeln selbst -Hilfen und Tipps bei Regelverstößen Modul 3 Wie nehmen Ihre Schüler Sie wahr? Kennenlernen und reflektieren erprobter Methoden zur Erhebung von Feedback im Kontext Schule. Modul 4 Einführung in die Konfliktmoderation -Kommunikation in belastenden Konfliktsituationen stärken. -Die wichtigsten Schritte für den Verlauf eines Konfliktgesprächs. -Vertiefung zu den phasenspezifischen Interventionstechniken Modul 5 Albtraum Schule-Mobbing im Schulalltag -Mobbing/Cybermobbing in der Schule wirksam begegnen -Worauf man achten sollte - wir setzen die „Mobbing-Brille“ auf -Missverständnisse und Achtsamkeiten -Präventions- und Interventionsmaßnahmen „No Blame Approach“ als Interventionsansatz -Vorstellung erprobter Konzepte aus dem Schulalltag Kooperationspartner: Bundeszentrale für gesundheitliche Aufklärung (BZgA) Köln Präventionsteam der Polizeiinspektion Osnabrück Stadt und Land Schulpsychologischer Dienst der Landesschulbehörde Osnabrück Deutscher Kinderschutzbund, Kreisverband Osnabrück Projektleitungsteam „Mediation“ des Ratsgymnasiums Osnabrück Kurzbeschreibung des Lehrbeauftragten Der Lehrbeauftragte arbeitete von 1976 bis 2007 als Lehrer an verschiedenen Schulstufen. Er war als Multiplikator für die „Bewegte Schule“ und Schülervertretungsberater der Landesschulbehörde beauftragt. Seit 2003 ist er zertifizierter Mediator und hat umfangreiche Erfahrungen in Trainingsseminaren mit den Schwerpunkten Gewaltprävention und Förderung des sozialen Lernens. Er ist seit 2008 Lehrbeauftragter der Universität Osnabrück für Konfliktmanagement und Mediation.",
+        "description_translated": "Intention: Since the seminar partly provides for a movement and experience pedagogical activity and the change from theoretical reflections to behaviour in school conflict situations and practical training sequences, no examination results but ungraded study results (4 LP) are offered. Regular and active participation is required to achieve the competencies. Seminar concept: The concept for classes to strengthen social competence is aimed at making the pupils more cooperative, communicative and able to deal with conflicts in their behaviour. The seminar will highlight how conflicts can arise and escalate in the classroom. The aim is to promote the students' social competence to act. Examples from the everyday life of the participants should help to develop concrete perspectives for action. Module 1 Welcome and introduction to the topic - You don't say anything - phenomena of communication processes - it is not the conflict that is the problem, but the way we deal with it. -The emergence, perception and escalation of conflicts Module 2 Avoidance of teaching disorders through good classroom management - Everything is so different here - Getting used to the new school - Appearance forms of teaching disorders that arise from the characteristics and behaviour of pupils, teachers and external events. -We work out our class rules ourselves - Help and tips for breaches of the rules Module 3 How do your students perceive you? Get to know and reflect on tried and tested methods for collecting feedback in the school context. Module 4 Introduction to conflict moderation - Strengthening communication in stressful conflict situations. -The most important steps for the course of a conflict discussion. -Deepening the phase-specific intervention techniques Module 5 Nightmare school bullying in school life -Mobbing/cybermobbing in school -What to look out for - We put the mobbing glasses on -Misunderstandings and mindfulness -Prevention and intervention measures No Blame Approach as an intervention approach -Presentation of tried and tested concepts from school life Cooperation partners: Bundeszentrale für gesundheitliche Aufklärung (BZgA) Cologne Prevention team of the police inspectorate Osnabrück City and State School Psychological Service of the state school authority Osnabrück Deutscher Kinderschutzbund, Kreisverband Osnabrück Project management team Mediation of the Ratsgymnasium Osnabrück Brief description of the lecturer The lecturer worked from 1976 to 2007 as a teacher at various school levels. He was commissioned as a multiplicator for the Bewegte Schule and student representative consultant for the Landesschulbehörde. He has been a certified mediator since 2003 and has extensive experience in training seminars focusing on the prevention of violence and the promotion of social learning. He has been a lecturer for conflict management and mediation at the University of Osnabrück since 2008.",
+        "language": "de",
+        "course_number": "3.1164",
+        "semester": "SS 2019",
+        "faculty": "Institut für Erziehungswissenschaf",
+        "results": []
+      }
+    },
+    {
+      "type": "lectures",
+      "id": "5",
+      "attributes": {
+        "title": "U.S.-American Literature and Culture from Modernism to Postmodernism",
+        "title_translated": "",
+        "description": "This series of lectures presents the concluding part of the literary and cultural history of the United States from colonial times until today. It will start with the development of modernism in the arts around 1900, covering the new trends and experiments in poetry, drama and prose in the 1920s, the awakening of a new African American self-awareness and aesthetics during the Harlem Renaissance, the development of the novel up to WWII and into the Cold War, and finally, discussing the new forms of social protest, public art, ethnic and minority cultures and literatures, connected to the emergence of a 'postmodern' culture in the 1960s. The series will end with a discussion of most recent trends and developments in contemporary American literature and culture.",
+        "language": "en",
+        "description_translated": "",
+        "course_number": "7.110305",
+        "semester": "SS 2019",
+        "faculty": "Anglistik",
+        "results": []
+      }
+    },
+    {
+      "type": "lectures",
+      "id": "6",
+      "attributes": {
+        "title": "Sensory Physiology",
+        "title_translated": "",
+        "description": "Introduction to sensory physiology and sensory perception for students of Cognitive Science.",
+        "language": "en",
+        "description_translated": "",
+        "course_number": "5.13640",
+        "semester": "SS 2019",
+        "faculty": "Neurobiologie",
+        "results": []
+      }
+    },
+    {
+      "type": "lectures",
+      "id": "7",
+      "attributes": {
+        "title": "Action & Cognition II: Higher Cognitive Functions (Lecture)",
+        "title_translated": "",
+        "description": "Prerequisites: Action and Cognition I</p> <p>In this lecture, it is the follow-up of Action & Cognition I in the winter term, we discuss the physiological substrate of cognitive processes with an emphasis on their relation to behavior. On your journey through the brain we will meet object recognition, attention, decision processes, movement planning and consciousness. A bias will be on physiological mechanisms, but due attention to clinical aspects, theoretical analysis and information theoretic measures will be given.</p> <p>Attending the seminar (Action & Cognition II, seminar) is encouraged, but not required.</p>",
+        "language": "en",
+        "description_translated": "",
+        "course_number": "8.3057",
+        "semester": "SS 2019",
+        "faculty": "LE Cognitive Science",
+        "results": []
+      }
+    },
+    {
+      "type": "lectures",
+      "id": "8",
+      "attributes": {
+        "title": "Corso di perfezionamento per avanzati",
+        "title_translated": "Advanced training course",
+        "description": "Voraussetzung ist die erfolgreiche Teilnahme am “Corso di scrittura.",
+        "description_translated": "Prerequisite is the successful participation in the Corso di scrittura.",
+        "language": "it",
+        "course_number": "7.801304",
+        "semester": "SS 2019",
+        "faculty": "Romanistik",
+        "results": []
+      }
+    },
+    {
+      "type": "lectures",
+      "id": "9",
+      "attributes": {
+        "title": "Medieval Encounters between Christianity and Islam",
+        "title_translated": "",
+        "description": "",
+        "description_translated": "",
+        "language": "en",
+        "course_number": "3.561",
+        "semester": "SS 2019",
+        "faculty": "Institut für Katholische Theologie",
+        "results": []
+      }
+    },
+    {
+      "type": "lectures",
+      "id": "10",
+      "attributes": {
+        "title": "Tutorium zur Vorlesung: System Ökozonen und Lebewesen",
+        "title_translated": "Lecture tutorial: System Ecozones and Living Beings",
+        "description": "Ziele der Vorlesung: Über die Charakteristika der einzelnen Ökozonen der Erde erarbeiten die TeilnehmerInnen in dieser Veranstaltung ein Ordnungsmuster der Erde in der globalen Dimension, wobei neben der qualitativen Darstellung einzelner Merkmale und Merkmalskomplexe auch die quantitative Erfassung von Stoff- und Energievorräten eine Rolle spielt. Die Betrachtung von Ökozonen stellt die linienhafte Abgrenzung von Klimazonen in Frage und nimmt auch die in geologischen Zeiträumen entstandenen Oberflächenformen, die keineswegs immer mit heutigen klimatischen Bedingungen korrespondieren müssen, in die Diskussion auf. Inhalt: Unter dem Begriff 'Ökozonen' werden Großräume der Erde zusammengefasst, die sich durch eine jeweils eigenständige Klimagenese, Lebensweise von Pflanzen und Tieren, Morphodynamik, Boden-bildungsprozesse sowie agrarische oder forstliche Produktionsleistungen auszeichnen. Sie unterscheiden sich z.B. nach dem jährlichen oder täglichen Klimagang, der Hydrologie (z.B. Abflussdynamik), den exogenen Landformen, den Pflanzenformationen und nicht zuletzt auch nach agrarisch-forstlichen Nutzungssystemen. Umweltprobleme, die sich in den einzelnen Zonen häufig durch eine zu hohe Landnutzungsintensität bzw. an die jeweiligen ökologischen Bedingungen vor Ort unangepasste Bewirtschaftungsart und –intensität ergeben, werden zumindest exemplarisch jeweils ebenfalls behandelt. Lehr-/Lernmethoden Vorlesung, Nachbereitung des Stoffes durch die Teilnehmer mit Unterstützung einer Tutorin. Literatur (Einführung!)Hard, G. (1982): Landschaftsgürtel / Landschaftszonen / Geozonen. In: Jander, L. & W. Schranke (Eds.): Metzler Handbuch für den Geographieunterricht. Metzler, Stuttgart. 171-174. Pfadenhauer, J.S. & F.A. Klötzli (2014): Vegetation der Erde. Grundlagen, Ökologie, Verbreitung. Springer Spektrum, Heildeberg. 643 S. Schultz, J. (2002): Die Ökozonen der Erde. 3. Aufl. UTB, Ulmer, Stuttgart. Ihre Materialien aus den Grundvorlesungen zur Physischen Geographie.",
+        "description_translated": "Objectives of the lecture: In this course, the participants work on the characteristics of the individual eco-zones of the earth and develop an order pattern of the earth in the global dimension. In addition to the qualitative representation of individual characteristics and characteristic complexes, the quantitative recording of material and energy reserves also plays a role. The consideration of ecological zones questions the linear delimitation of climate zones and also includes in the discussion the surface forms that have emerged in geological periods, which by no means always have to correspond with today's climatic conditions. Content: The term ecological zones is used to describe large areas of the earth which are characterised by an independent climatic genesis, the way of life of plants and animals, morphodynamics, soil formation processes as well as agricultural or forestry production services. They differ, for example, according to the annual or daily course of climate, hydrology (e.g. runoff dynamics), exogenous land forms, plant formations and, last but not least, agricultural-forestry use systems. Environmental problems that frequently arise in the individual zones as a result of excessive land use intensity or management methods and intensities that are not adapted to the respective ecological conditions on site are also dealt with, at least by way of example. Teaching/learning methods Lecture, follow-up of the material by the participants with the support of a tutor. Literature (Introduction!)Hard, G. (1982): Landschaftsgürtel / Landschaftszonen / Geozonen. In: Jander, L. & W. Schranke (Eds.): Metzler Handbook for Geography Education. Metzler, Stuttgart. 171-174th Pfadenhauer, J.S. & F.A. Klötzli (2014): Vegetation of the Earth. Basics, ecology, distribution. Springer Spektrum, Heildeberg. 643 S. Schultz, J. (2002): The Ecological Zones of the Earth. 3rd ed. UTB, Ulmer, Stuttgart. Her materials from the basic lectures on physical geography.",
+        "language": "de",
+        "course_number": "2.1012",
+        "semester": "SS 2019",
+        "faculty": "Institut für Informatik",
+        "results": []
+      }
+    },
+    {
+      "type": "lectures",
+      "id": "11",
+      "attributes": {
+        "title": "Reisebilder. Künstler- und Künstlerinnenreisen seit der Frühen Neuzeit",
+        "title_translated": "Travel pictures. Artist journeys since the early modern period.",
+        "description": "Universität Osnabrück, Fachbereich I, Kunsthistorisches Institut, SoSe 2019 Apl. Prof. Dr. Melanie Ulz Reisebilder Künstler- und Künstlerinnenreisen seit der Frühen Neuzeit Vorlesung Mo, 16-18 Uhr, Raum 11/115 (Schloss) Beginn: 8. April 2019 Die Vorlesung nimmt Reisebilder europäischer und internationaler Künstler- und Künstlerinnen von der Frühen Neuzeit bis in die Gegenwart exemplarisch in den Blick. Gefragt wird unter anderem nach dem Wandel von Mobilitäts- und Migrationskonzepten und deren Einfluss auf die künstlerische Produktivität. Im Interessenmittelpunkt stehen z.B. der historische Zusammenhang zwischen künstlerischer oder wissenschaftlicher Reisebewegung sowie die Frage nach der Globalisierung europäischer Bildkonzepte und Blickregime.",
+        "description_translated": "University of Osnabrück, Department I, Kunsthistorisches Institut, SoSe 2019 Apl. Prof. Dr. Melanie Ulz Reisebilder Künstler- und Künstlerinnenreisen seit der Frühen Neuzeit Lecture Mo, 16-18 Uhr, Raum 11/115 (Schloss) Start: 8 April 2019 The lecture takes an exemplary look at travel pictures of European and international artists from the early modern period to the present. Among other things, the exhibition will examine the transformation of concepts of mobility and migration and their influence on artistic productivity. The focus of interest will be, for example, the historical connection between artistic or scientific travel as well as the question of the globalization of European pictorial concepts and gaze regimes.",
+        "language": "de",
+        "course_number": "2.370",
+        "semester": "SS 2019",
+        "faculty": "Kunstgeschichte",
+        "results": []
+      }
+    },
+    {
+      "type": "lectures",
+      "id": "12",
+      "attributes": {
+        "title": "Informationsstruktur, Syntax und Textkohärenz (SW3, WP BA)",
+        "title_translated": "Information Structure, Syntax and Text Coherence (SW3, WP BA)",
+        "description": "Das Seminar behandelt syntaktische, prosodische, semantische und pragmatische Aspekte von Textkohärenz, Informationsstruktur und Referenz. Die Bereitschaft zur Lektüre englischsprachiger Fachtexte ist unerlässlich.",
+        "description_translated": "The seminar deals with syntactic, prosodic, semantic and pragmatic aspects of text coherence, information structure and reference. Readiness to read English technical texts is essential.",
+        "language": "de",
+        "course_number": "7.410203",
+        "semester": "SS 2019",
+        "faculty": "Germanistik",
+        "results": []
+      }
+    },
+    {
+      "type": "lectures",
+      "id": "13",
+      "attributes": {
+        "title": "Die Französische Revolution",
+        "title_translated": "The French Revolution",
+        "description": "Die Französische Revolution zählt zu den zentralen Umbrüchen in der europäischen Geschichte und wird vielfach als Beginn der Moderne begriffen. Im Zeitraum zwischen 1789 und 1799 wurde die Monarchie zunächst in eine konstitutionelle Monarchie umgewandelt, diese dann im Zuge der Terreur gewaltsam abgeschafft und letztlich eine Republik gegründet. In der Direktorialzeit beruhigte sich die politische Situation, allerdings konnten sich die verschiedenen Direktorien nur mühsam gegenüber den nach sozialer Gleichheit strebenden Bevölkerungsschichten sowie monarchischen Restaurationsbewegungen behaupten. Zum entscheidenden Machtfaktor wurde dann das Bürgerheer, das nicht nur in den Revolutions- bzw. Koalitionskriegen kämpfte, sondern auch Napoleon zum Aufstieg verhalf. Diese Entwicklungen werden im Zentrum der Vorlesung stehen und aus unterschiedlichen Perspektiven beleuchtet. Es werden aber auch die Reaktionen auf die Französische Revolution sowie ihre Wirkungen in den Blick genommen.",
+        "description_translated": "The French Revolution is one of the central upheavals in European history and is often regarded as the beginning of modernity. In the period between 1789 and 1799, the monarchy was first transformed into a constitutional monarchy, which was then violently abolished in the course of the Terreur, and finally a republic was founded. The political situation calmed down during the period of the directorate, but the various directorates were only able to assert themselves with difficulty against the population strata striving for social equality and the monarchic restoration movements. The decisive power factor then became the citizen army, which not only fought in the revolutionary and coalition wars, but also helped Napoleon to rise. These developments will be the focus of the lecture and will be examined from different perspectives. However, the reactions to the French Revolution and its effects will also be examined.",
+        "language": "de",
+        "course_number": "2.204",
+        "semester": "SS 2019",
+        "faculty": "Geschichte",
+        "results": []
+      }
+    },
+    {
+      "type": "lectures",
+      "id": "14",
+      "attributes": {
+        "title": "Form als Norm? Gesellschaftliche Utopien und individuelle Wohnkonzepte.",
+        "title_translated": "Form as standard? Social utopias and individual living concepts.",
+        "description": "Sommersemester 2019 Helen Koriath Form als Norm? Gesellschaftliche Utopien und individuelle Wohnkonzepte Hauptseminar, Mastermodul 1 (Theorie und Methode) Do 10 – 12 (mit integrierten Workshops in Blöcken, in der zweiten Semesterhälfte auch an Freitagnachmittagen) Beginn: 04. 04. Kick-off, gemeinsam mit Antje Busch-Sperveslage und Jan Giebel Format, hat der Künstler Kurt Schwitters, der u. a. auch als Gestalter und Typograph gearbeitet hat, 1927 in einer niederländischen Zeitschrift geschrieben, sei ein neues Schlagwort für Architekten. Maler können Qualität haben, Architekten Format. Format bedeutet Qualität in der Anschauung. Da kann ein ganz kleines Ding oft Format haben. Seit Jahrzehnten schon wurde zu diesem Zeitpunkt in fortwährenden Auseinandersetzungen unterschiedlicher Lager um eine Ablösung der Formideale des 19. Jahrhunderts und um mögliche Wege dahin gerungen. In Deutschland spielte der 1907 von Künstlern, Architekten, industriellen und handwerklichen Unternehmen gegründete Deutsche Werkbund eine wichtige Rolle in diesen Fragen und setzte sich die Veredelung der gewerblichen Arbeit auch und gerade in der Serienfertigung und Massenproduktion als Ziel. Es wurden sogenannte Warenbücher herausgegeben, die den Verbrauchern Hilfestellung bei der Gestaltung ihrer häuslichen Umwelt ohne Plüsch und Plunder leisten wollten. Auch große Ausstellungen wurden organisiert, um für die Form ohne Ornament zu werben. Zwar ließen Arbeitslosigkeit und Weltwirtschaftskrise viele Träume schrumpfen oder platzen, dennoch waren die ersten Jahrzehnte des 20. Jahrhunderts von Normierungsgedanken und entsprechend vielen Neuerungen im Bauen und in der Gestaltung des modernen Lebens geprägt, die sich bis in die Gegenwart auswirken. Entscheidende Impulse gingen auch vom Bauhaus in seiner zweiten Phase in Dessau aus. Auch die Entwicklung der Bauhaustapete in Zusammenarbeit von Bauhaus und Tapetenfabrik (Gebr. Rasch und Co, Bramsche bei Osnabrück), die im Sommer Gegenstand einer Ausstellung im Osnabrücker Museumsquartier sein wird, hatte zum Ziel, einen qualitativ hohen Standard in der Innenausstattung von einfachen Siedlungshäusern und 'Volkswohnungen' zu garantieren.In dieser projektorientierten Lehrveranstaltung wird der Fokus auf Studien industriell und in Serie hergestellter Dinge gerichtet, auf Produkte, die eher in den Bereich von 'Volksbedarf statt Luxusbedarf' fallen und die Alltags- und insbesondere Wohnumgebung heute prägen, deren Geschichte oftmals nicht bekannt ist, weil sie als Massenprodukte von anonymer Herkunft sind, also kein Label über ihre Ursprünge Aufschluss gibt. Als Untersuchungsgegenstände sollen vor allem Dinge aus dem Wohn- und Arbeitsumfeld der Lehrveranstaltungsteilnehmer dienen. Das Hauptseminar steht in enger Verbindung mit dem Hauptseminar Strategien und Methoden der Objektinszenierung am Freitag sowie den Lehrveranstaltungen von Antje Busch-Sperveslage und Jan Giebel. Es ist geplant, Ergebnisse aus diesen Lehrveranstaltungen zu einer gemeinsamen Präsentation in Zusammenhang mit der Ausstellung bauhaustapete – neu aufgerollt zusammenzuführen. nLiteratur befindet sich im Semesterapparat zu diesem Seminar in der UB und in den Semesterapparaten der Lehrveranstaltungen zu Bauhaus-Themen von Frau Dr. Busch-Sperveslage und Jan Giebel.",
+        "description_translated": "Summer Semester 2019 Helen Koriath Form as Norm? Social Utopias and Individual Living Concepts Hauptseminar, Master Module 1 (Theory and Method) Do 10 - 12 (with integrated workshops in blocks, in the second half of the semester also on Friday afternoons) Start: 04. 04. 04. Kick-off, together with Antje Busch-Sperveslage and Jan Giebel Format, the artist Kurt Schwitters, who has also worked as a designer and typographer, wrote in 1927 in a Dutch magazine, is a new catchword for architects. Painters can have quality, architects can have format. Format means quality in perception. A very small thing can often have format. For decades at this point in time, the continual arguments of different camps have been wrestling with the replacement of the formal ideals of the 19th century and with possible ways of achieving this. In Germany, the Deutscher Werkbund, founded in 1907 by artists, architects, industrial and craft enterprises, played an important role in these questions and set itself the goal of refining commercial work, especially in series production and mass production. So-called Warenbücher were published to help consumers design their home environment without plush and junk. Large exhibitions were also organised to promote the form without ornaments. Although unemployment and the world economic crisis caused many dreams to shrink or burst, the first decades of the 20th century were still marked by the idea of standardisation and correspondingly many innovations in construction and in the design of modern life, which have an effect to this day. The Bauhaus in its second phase in Dessau also provided decisive impetus. The development of Bauhaus wallpaper in cooperation between Bauhaus and Tapetenfabrik (Gebr. Rasch and Co, Bramsche near Osnabrück), which will be the subject of an exhibition in the Museumsquartier in Osnabrück this summer, also aimed to guarantee a high standard of quality in the interior design of simple residential buildings and people's apartments.In this project-oriented course, the focus will be on studies of industrial and mass-produced things, on products that fall more into the area of people's needs instead of luxury needs and shape the everyday and especially living environment today, whose history is often not known because they are mass products of anonymous origin, i.e. no label reveals their origins. The main objects of investigation will be things from the living and working environment of the course participants. The main seminar is closely connected with the main seminar Strategies and Methods of Object Staging on Friday as well as with the courses of Antje Busch-Sperveslage and Jan Giebel. It is planned to bring together the results of these courses in a joint presentation in connection with the exhibition bauhaus wallpaper - newly rolled up. nLiterature is in the semester apparatus for this seminar in the UB and in the semester apparatuses of the courses on Bauhaus topics by Dr. Busch-Sperveslage and Jan Giebel.",
+        "language": "de",
+        "course_number": "2.366",
+        "semester": "SS 2019",
+        "faculty": "Kunstgeschichte",
+        "results": []
+      }
+    },
+    {
+      "type": "lectures",
+      "id": "15",
+      "attributes": {
+        "title": "Graphenalgorithmen",
+        "title_translated": "Graph algorithms",
+        "description": "Graphen gehören zu den wichtigsten Modellen der Informatik, die zahlreiche praktische Anwendungen haben (z.B. im Verkehrs- und Telekommunikationsbereich, der Produktionsplanung oder allgemein bei vielen kombinatorischen Optimierungsproblemen). Nach einer Einführung in die Grundbegriffe der Graphentheorie sollen Suchverfahren, Zusammenhangs-Probleme, Bäume, Kürzeste Wege, Matching- und Routing-Probleme, Knoten- und Kantenfärbungen behandelt werden. Dabei steht die Entwicklung von effizienten Lösungsverfahren im Vordergrund. In den Übungen sollen einige Algorithmen auch praktisch implementiert werden.",
+        "description_translated": "Graphs belong to the most important models of computer science, which have numerous practical applications (e.g. in transport and telecommunications, production planning or generally in many combinatorial optimization problems). After an introduction to the basic concepts of graph theory, search methods, correlation problems, trees, shortest paths, matching and routing problems, node and edge colorations will be dealt with. The focus is on the development of efficient solution methods. In the exercises some algorithms will be implemented in practice.",
+        "language": "de",
+        "course_number": "6.610",
+        "semester": "SS 2019",
+        "faculty": "Institut für Informatik",
+        "results": []
+      }
+    },
+    {
+      "type": "lectures",
+      "id": "16",
+      "attributes": {
+        "title": "Making Reality: Art, Storytelling, Technology, and the Environment",
+        "title_translated": "",
+        "description": "**Please Note: This course is only open to master students in the following programs: -- English and American Studies -- Literatur und Kultur in Europa -- Kunst und Kommunikation Other master students have to speak with the instructor (Schneck, Meyer) about optional attendance in person. This applies only when slots are still available, priority will be given to students from the said programs.** Content: Humans have been telling multimedial stories since imagination exists, and thus defined, explained, and shaped reality. In the same way, art has always been affected by technology as an opportunity for experimenting and developing new tools. While the active participation of an audience isn't a new idea either, storytelling has taken on new forms of co-creating and interaction over the last years, which include and extend into virtual realities and the ever-louder call for 'making real'. With increasing social and environmental challenges facing the current and coming generations, innovative and participatory forms of storytelling have become even bigger assets in the fabrication of possible new realities, thus cross-pollinating different genres and fields, from biomimicry to museality. In the frame of the seminar, we investigate various forms of the telling and making of reality by artists, scientists, writers, tinkerers, players, designers, and more. The participants will be encouraged to investigate new perspectives, and find their own innovative ways of making reality. Expectations The interdisciplinary seminar is open to all students willing to engage in lively discussions and (artistic) research activities. A reading list will be provided before the seminar, the participants are expected to read the core texts and prepare the seminar through individual research tasks communicated in advance. Participation in all sessions is mandatory.",
+        "description_translated": "",
+        "language": "en",
+        "course_number": "7.110307",
+        "semester": "SS 2019",
+        "faculty": "Anglistik/Kunst/Kunstpädagogik",
+        "results": []
+      }
+    },
+    {
+      "type": "lectures",
+      "id": "17",
+      "attributes": {
+        "title": "Mensch-Computer Interaktion",
+        "title_translated": "Human-Computer Interaction",
+        "description": "Exemplarische Inhalte: Gegenstand der Übung sind Konzepte, Methoden und Modelle für die Gestaltung menschen- und aufgabengerechter Computeranwendungen. Ausgewählte Methoden für die Analyse und Evaluation von Prototypen, sowie Ansätze beteiligungsorientierter Gestaltung von Mensch-Computer Systemen, wie sie im Rahmen des Usability-Engineerings zum Einsatz kommen, werden vermittelt und praktisch erprobt.",
+        "description_translated": "Exemplary contents: Subject of the exercise are concepts, methods and models for the design of human- and task-oriented computer applications. Selected methods for the analysis and evaluation of prototypes, as well as approaches to participatory design of human computers Systems used in usability engineering are taught and tested in practice.",
+        "course_number": "8.12462",
+        "language": "de",
+        "semester": "SS 2019",
+        "faculty": "Institut für Psychologie",
+        "results": []
+      }
+    },
+    {
+      "type": "lectures",
+      "id": "18",
+      "attributes": {
+        "title": "WIWI-B-01015-MA: Grundlagen des Marketing",
+        "title_translated": "WIWI-B-01015-MA: Fundamentals of Marketing",
+        "description": "Bestandteile des Moduls: Vorlesung Grundlagen des Marketing Tutorien zu Grundlagen des Marketing",
+        "description_translated": "Components of the module: Lecture Basics of Marketing Tutorials on the basics of marketing",
+        "language": "de",
+        "course_number": "9.1901",
+        "semester": "SS 2019",
+        "faculty": "Fachbereich 9: Wirtschaftswissenschaften",
+        "results": []
+      }
+    },
+    {
+      "type": "lectures",
+      "id": "19",
+      "attributes": {
+        "title": "Introduction to spatial data visualization and analysis in political science (BA und MA)",
+        "title_translated": "",
+        "description": "Many political processes have strong spatial dimensions: geographical patterns of violent conflict, spatial clusters of voting behavior or uneven institution-building. Understanding the determinants and outcomes of spatial political patterns poses specific theoretical and methodological challenges. The seminar provides an applied introduction into methods and tools of political geography focusing on spatial dimensions of violent conflict, development and state-building at the subnational level. The first part of the seminar will introduce the broad themes and key concepts of political geography. The second part will provide a general overview and critical appraisal of various sources of spatial data. The third part of the course will focus on basic methods of visualization and analysis of spatial data in qualitative and quantitative research designs. The course will include a hands-on introduction into the use of Geographic Information Systems (GIS) using the open source software Quantum GIS (QGIS).",
+        "description_translated": "",
+        "language": "en",
+        "course_number": "1.125",
+        "semester": "SS 2019",
+        "faculty": "Sozialwissenschaften",
+        "results": []
+      }
+    },
+    {
+      "type": "lectures",
+      "id": "20",
+      "attributes": {
+        "title": "Interdisciplinary seminar on applied research methods",
+        "title_translated": "",
+        "description": "This seminar is intended to strenghten the understanding of applied scientific methods of IUSF members (application, strengths, weaknesses, limits). During the seminar we try to get an overview on the method portfolio we have in the IUSF. By collecting best practice examples for the use of particular methods, we are exploring possibilities to combine methods with one another and understand their respective limits. Getting to know, who uses which methods, and to share knowledge and experiences will hopefully lead to understand how the different methods link to each other in the bigger picture. The presentations will generally be recorded via OpenCast and are only accessible to registered participants. This course is adressed to all scientific staff members of the Institute of Environmental Systems Research. It is also open to advanced students who want to get more familiar with applied scientific methods used by members of the IUSF. No grade or credit points will be awarded.",
+        "description_translated": "",
+        "language": "en",
+        "course_number": "n.a.",
+        "semester": "SS 2019",
+        "faculty": "Institut für Umweltsystemforschung",
+        "results": []
+      }
+    },
+    {
+      "type": "lectures",
+      "id": "21",
+      "attributes": {
+        "title": "Estilo y Modalidades Expresivas",
+        "title_translated": "Style and Expressive Modalities",
+        "description": "El curso se dirige a estudiantes del Lehrermaster Spanisch y Master Romanística con buenos conocimientos de español, equivalentes al nivel C1/C2. Su objetivo es aprender a confrontarse prácticamente con las múltiples variedades que el idioma español nos ofrece en sus diferentes niveles y registros, aprender a reconocerlos y a utilizarlos conscientemente con su amplia gama de modalidades expresivas según la situación comunicativa",
+        "description_translated": "The course is aimed at students of the Lehrermaster Spanisch and Master Romanistica with good knowledge of Spanish, equivalent to level C1/C2. Their objective is to learn to confront practically with the multiple varieties that the Spanish language offers us in its different levels and registers, to learn to recognize them and to use them consciously with its wide range of expressive modalities according to the communicative situation.",
+        "language": "es",
+        "course_number": "7.801103",
+        "semester": "SS 2019",
+        "faculty": "Romanistik",
+        "results": []
+      }
+    },
+    {
+      "type": "lectures",
+      "id": "22",
+      "attributes": {
+        "title": "Grammaire 1",
+        "title_translated": "Grammar 1",
+        "description": "Ce cours traite les principaux points de grammaire à un premier niveau (expression de la quantité, emploi des articles et des autres déterminants, négation et restriction, emploi des modes et des temps (y compris les auxiliaires), les pronoms personnels et adverbiaux, les propositions conditionnelles et les autres propositions circonstancielles, le discours indirect (y compris l'interrogation indirecte). La maîtrise de ces règles fondamentales servira de base à un approfondissement des mêmes thèmes dans le cours 'Grammaire 2'.",
+        "description_translated": "This course covers the main grammar points at a first level (expression of quantity, use of articles and other determinants, negation and restriction, use of modes and times (including auxiliaries), personal and adverbial pronouns, conditional and other circumstantial propositions, indirect discourse (including indirect interrogation). Mastery of these fundamental rules will serve as a basis for further study of the same themes in the Grammar 2 course.",
+        "language": "fr",
+        "course_number": "7.801501",
+        "semester": "SS 2019",
+        "faculty": "Romanistik",
+        "results": []
+      }
+    }
+  ]
+}
